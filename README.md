@@ -17,7 +17,7 @@ This project is a **bilingual (Arabic/English) HTTP agentic service** that acts 
   - `general_q_a` → best time, culture, safety, transport.  
   - `place_recommendation` → where to eat/stay/visit.  
 -  **Quality Assurance Layer** – Checks and refines answers before returning.
--   **Conversation Memory** – Keeps track of past user queries to provide coherent, contextual answers.    
+-  **Conversation Memory** – Keeps track of past user queries to provide coherent, contextual answers.    
 -  **Containerized** – Runs inside Docker.
 
 ##  Architecture 
@@ -46,7 +46,7 @@ flowchart TD
     D --> F["Conversation Memory"]
     E --> F
 
-    F --> G["Quality Assurance Agent"]
+    F --> G["Primary Agent"]
     G --> H["Final Friendly Tour Guide Response"]
 
 ```
